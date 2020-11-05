@@ -1,0 +1,177 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\ftech\fcharset77 Symbol;\f2\fnil\fcharset0 LucidaGrande;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww17300\viewh15540\viewkind0
+\deftab720
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\fs36 \cf2 \expnd0\expndtw0\kerning0
+1 -  program 
+\f1 \uc0\u8594 
+\f0  decl_list\
+\
+2 - decl_list  
+\f1 \uc0\u8594  
+\f0 decl decl_list `\
+3 - decl_list `  
+\f1 \uc0\u8594  
+\f0 decl decl_list `  |  \uc0\u949   \
+\
+4 - decl 
+\f1 \uc0\u8594 
+\f0  var_decl | fun_decl \
+\
+5 - var_decl 
+\f1 \uc0\u8594 
+\f0  type_spec IDENT BB\
+6 - BB  
+\f1 \uc0\u8594  
+\f0  ; | [ ] ;  												\
+\
+\
+7 - type_spec 
+\f1 \uc0\u8594 
+\f0  VOID | BOOL | INT | FLOAT \
+\
+8 - fun_decl 
+\f1 \uc0\u8594 
+\f0  type_spec IDENT ( params ) compound_stmt \
+\
+9 - params 
+\f1 \uc0\u8594 
+\f0  param_list | VOID \
+\
+10 - param_list 
+\f1 \uc0\u8594  
+\f0 param param_list`\
+11 - param_list` 
+\f1 \uc0\u8594  
+\f0 , param param_list` | \uc0\u949 \
+\
+12 - param 
+\f1 \uc0\u8594 
+\f0  type_spec  IDENT param`\
+13 - param` 
+\f1 \uc0\u8594 
+\f0  \uc0\u949  |  [ ] \
+\
+14 - stmt_list 
+\f1 \uc0\u8594  
+\f0  stmt_list`\
+15 - stmt_list` 
+\f1 \uc0\u8594  
+\f0 stmt stmt_list` | \uc0\u949  \
+\
+\
+16 - stmt 
+\f1 \uc0\u8594 
+\f0  expr_stmt | compound_stmt | if_stmt | while_stmt | return_stmt | break_stmt \
+\
+17 - expr_stmt 
+\f1 \uc0\u8594 
+\f0  expr ; | ; \
+\
+18 - while_stmt 
+\f1 \uc0\u8594 
+\f0  WHILE ( expr ) stmt \
+\
+19 - compound_stmt 
+\f1 \uc0\u8594 
+\f0  \{ local_decls stmt_list \} \
+\
+20 - local_decls 
+\f1 \uc0\u8594  
+\f0  local_decls`\
+21 - local_decls` 
+\f1 \uc0\u8594  
+\f0 local_decl local_decls` | \uc0\u949  \
+\
+22 - local_decl 
+\f1 \uc0\u8594 
+\f0  type_spec IDENT  BB\
+\
+\
+23 - if_stmt 
+\f1 \uc0\u8594 
+\f0  IF  ( expr ) stmt if_stmt`\
+24 - if_stmt` 
+\f1 \uc0\u8594  
+\f0  \uc0\u949   |  ELSE stmt \
+\
+25 - return_stmt 
+\f1 \uc0\u8594 
+\f0  RETURN  AB \
+35 - AB 
+\f1 \uc0\u8594  
+\f0 ; | expr ; \
+\
+26 - expr 
+\f1 \uc0\u8594 
+\f0  IDENT  A\
+27 - A  
+\f1 \uc0\u8594  
+\f0 = expr | [ expr ] Q | \uc0\u949  | ( args) | . size | expr\
+36 - Q  
+\f1 \uc0\u8594 
+\f0  = expr | \uc0\u949 \
+28 - expr 
+\f1 \uc0\u8594  
+\f2 expr`
+\f1 \
+
+\f2 29 - expr`
+\f1  \uc0\u8594  
+\f2 B
+\f1  
+\f2 expr` | 
+\f0 \uc0\u949  \
+\
+30 - B 
+\f1 \uc0\u8594  
+\f0 OR expr | EQ expr |  NE expr | LE expr | < expr | GE expr | > expr | AND expr | + expr | - expr |  * expr | / expr | % expr\
+\
+31 - expr	 
+\f1 \uc0\u8594 
+\f0  ! expr | - expr | + expr \
+	 
+\f1 \uc0\u8594 
+\f0  ( expr )\
+	 
+\f1 \uc0\u8594 
+\f0  BOOL_LIT | INT_LIT | FLOAT_LIT | NEW type_spec [ expr ] \
+\
+\
+\
+\
+32 - arg_list 
+\f1 \uc0\u8594  
+\f0 expr arg_list`\
+33 - arg_list` 
+\f1 \uc0\u8594  
+\f0 , expr arg_list` | \uc0\u949 \
+\
+34 - args 
+\f1 \uc0\u8594 
+\f0  arg_list | \uc0\u949 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
